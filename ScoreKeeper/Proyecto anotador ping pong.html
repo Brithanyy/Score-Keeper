@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <title>Ping Pong Anotador</title>
+    
+</head>
+<body>
+    <section class="section">
+   <div class="container">
+       <div class="columns">
+           <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-2by1">
+                     <img src="https://images.unsplash.com/photo-1580420015418-dc24a2fa2b95?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Ping Pong">
+                    </figure>
+                </div>
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Ping Pong Anotador
+                  </p>
+                
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <h1 class="title is-1"><span id="p1Display">0</span> a <span id="p2Display">0</span></h1>
+                    <p class="subtitle">Los botones de abajo son para llevar la puntuación.</p>
+                  </div>
+                </div>
+                <label for="playTo" class="label is-large is-inline">Jugando a</label>
+                <div class="select is-rounded">
+                    <select id="playTo">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="21">21</option>
+                    </select>
+                </div>
+                <footer class="card-footer">
+                    <button id="boton1Puntaje" class="button is-large card-footer-item is-primary is-outlined is-rounded">+1 Jugador 1</button>
+                    <button id="boton2Puntaje" class="button is-large card-footer-item is-link is-outlined is-rounded">+1 Jugador 2</button>
+                    <button id="botonReinicio" class="button is-large card-footer-item is-danger is-outlined is-rounded">Reiniciar</button>
+                 
+                </footer>
+              </div>
+           </div>
+       </div>
+   </div>
+</section>
+  
+
+
+    <script src="Proyecto anotador ping pong.js"></script>
+</body>
+</html>
